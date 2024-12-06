@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Registration Form</h1>
+        <form id="vehicleForm" action="display.php" method="POST">
+            <label for="ownerName">Owner Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="vehicleModel">Vehicle Model:</label>
+            <input type="text" id="vehicleModel" name="vehicleModel" required>
+
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input type="text" id="vehicleNumber" name="vehicleNumber" required>
+
+            <label for="registrationDate">Registration Date:</label>
+            <input type="date" id="registrationDate" name="registrationDate" required>
+
+            <label for="vehicleType">Vehicle Type:</label>
+            <select id="vehicleType" name="vehicleType" required>
+                <option value="">--Select--</option>
+                <option value="Car">Car</option>
+                <option value="Bike">Bike</option>
+                <option value="Truck">Truck</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
